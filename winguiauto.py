@@ -324,9 +324,9 @@ def click(hwnd):
     :return:
     '''
     win32gui.PostMessage(hwnd, win32con.WM_LBUTTONDOWN, None, None)
-    time.sleep(.2)
+    time.sleep(.1)
     win32gui.PostMessage(hwnd, win32con.WM_LBUTTONUP, None, None)
-    time.sleep(.2)
+    time.sleep(.1)
 
 
 def focusWindow(hwnd):
